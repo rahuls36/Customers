@@ -33,15 +33,15 @@ curl -H "Content-Type: application/json" -H "Authorization: Bearer TOKEN_RECIEVE
 ```
 curl -H "Content-Type: application/json" -H "Authorization: Bearer TOKEN_RECIEVED IN THE PREVIOUS STEP" -d '{"name": "John Doe", "dob":"1970-01-01"}' -XPOST http://0.0.0.0:8000/api/customers/
 ```
--DELETE: This Api is Used for deleting the Customer according to the ID eg:
+- DELETE: This Api is Used for deleting the Customer according to the ID eg:
 ```
 curl -H "Content-Type: application/json" -H "Authorization: Bearer TOKEN_RECIEVED IN THE PREVIOUS STEP" -X "DELETE" http://0.0.0.0:8000/api/customers/id/
 ```
--UPDATE: This Api is Used for Updating the Customer details according to the ID eg:
+- UPDATE: This Api is Used for Updating the Customer details according to the ID eg:
 ```
 curl -H "Content-Type: application/json" -H "Authorization: Bearer TOKEN_RECIEVED IN THE PREVIOUS STEP" -d '{"name": "John Doe", "dob":"1970-01-01"}' -X "PUT" http://0.0.0.0:8000/api/customers/id/
 ```
--get_youngest_customer(GET): This Api return the n youngest customers(n to be passed as argument as get) eg:
+- get_youngest_customer(GET): This Api return the n youngest customers(n to be passed as argument as get) eg:
 ```
 curl -H "Content-Type: application/json" -H "Authorization: Bearer TOKEN_RECIEVED IN THE PREVIOUS STEP" -XGET http://0.0.0.0:8000/api/customers/get_youngest_customer/?n=YOUR_DESIRED_NUMBER
 ```
