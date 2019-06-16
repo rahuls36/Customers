@@ -9,10 +9,10 @@ djangorestframework-jwt
 
 # STARTING APP
 ### Create a Super user
-'''
+```
 docker-compose run web python manage.py createsuperuser
-'''
+```
 ### Start the application
-'''
+```
 docker-compose up
-'''
+```
