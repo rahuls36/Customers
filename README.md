@@ -7,7 +7,7 @@ A Django Application that lets the user Create a Customer and do CRUD operations
 - django-rest-framework 
 - djangorestframework-jwt
 
-# STARTING APP
+# GETTING STARTED
 ### Clone the repository
 ```
 https://github.com/rahuls36/Customers.git
