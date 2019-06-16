@@ -8,6 +8,10 @@ A Django Application that lets the user Create a Customer and do CRUD operations
 - djangorestframework-jwt
 
 # STARTING APP
+### Clone the repository
+```
+https://github.com/rahuls36/Customers.git
+```
 ### Start the application
 ```
 docker-compose up
@@ -36,10 +40,11 @@ curl -H "Content-Type: application/json" -H "Authorization: Bearer TOKEN_RECIEVE
 -UPDATE: This Api is Used for Updating the Customer details according to the ID eg:
 ```
 curl -H "Content-Type: application/json" -H "Authorization: Bearer TOKEN_RECIEVED IN THE PREVIOUS STEP" -d '{"name": "John Doe", "dob":"1970-01-01"}' -X "PUT" http://0.0.0.0:8000/api/customers/id/
+```
 -get_youngest_customer(GET): This Api return the n youngest customers(n to be passed as argument as get) eg:
 ```
 curl -H "Content-Type: application/json" -H "Authorization: Bearer TOKEN_RECIEVED IN THE PREVIOUS STEP" -XGET http://0.0.0.0:8000/api/customers/get_youngest_customer/?n=YOUR_DESIRED_NUMBER
-
+```
 
 
 
